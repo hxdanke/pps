@@ -1,8 +1,6 @@
-
-
 int main() {
 
-	// something
+	printMainMenu();
 
 	return 0;
 }
