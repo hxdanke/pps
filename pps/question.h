@@ -10,6 +10,7 @@ private:
 	int paperComponent;
 	int year;
 	int syllabus;
+	int mark;
 
 protected:
 	//	Set data
@@ -17,6 +18,7 @@ protected:
 	void setPaperComponent(int a)	{ this->paperComponent	=	a; }
 	void setYear(int a)				{ this->year			=	a; }
 	void setSyllabus(int a)			{ this->syllabus		=	a; }
+	void setMark(int a)				{ this->mark			=	a; }
 
 public:
 	//	Get data
@@ -24,19 +26,22 @@ public:
 	int getPaperComponent()	{ return this->paperComponent; }
 	int getYear()			{ return this->year; }
 	int getSyllabus()		{ return this->syllabus; }
+	int getMark()			{ return this->mark; }
 
 	//	Constructors
 	Question() {
 		setNumber(0);
 		setPaperComponent(0);
 		setYear(0);
+		setMark(0);
 		setSyllabus(0);
 	}
-	Question(int a, int b, int c, int d) {
+	Question(int a, int b, int c, int d, int e) {
 		setNumber(a);
 		setPaperComponent(b);
 		setYear(c);
-		setSyllabus(d);
+		setMark(d);
+		setSyllabus(e);
 	}
 };
 
@@ -44,34 +49,31 @@ class CAIEQuestion : Question {
 
 private:
 	//	Data
-	int paperVariant;
-	int season;
+		int season;
 
 protected:
 	//	Set data
-	void setPaperVariant(int a) { this->paperVariant = a; }
-	void setSeason(int a) { this->season = a; }
+		void setSeason(int a) { this->season = a; }
 
 public:
 	//	Get data
-	int getPaperVariant()	{ return this->paperVariant; }
-	int getSeason()			{ return this->season; }
+		int getSeason()			{ return this->season; }
 
 	//	Constructors
 	CAIEQuestion() {
 		setNumber(0);
-		setPaperVariant(0);
 		setPaperComponent(0);
 		setSeason(0);
 		setYear(0);
+		setMark(0);
 		setSyllabus(0);
 	}
 	CAIEQuestion(int a, int b, int c, int d, int e, int f) {
 		setNumber(a);
-		setPaperVariant(b);
-		setPaperComponent(c);
-		setSeason(d);
-		setYear(e);
-		setSyllabus(f);
+		setPaperComponent(b);
+		setSeason(c);
+		setYear(d);
+		setMark(e);
+		setSyllabus(e);
 	}
 };
