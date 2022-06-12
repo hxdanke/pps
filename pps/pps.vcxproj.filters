@@ -26,5 +26,11 @@
     <ClInclude Include="question.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

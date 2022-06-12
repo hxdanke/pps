@@ -131,6 +131,8 @@
     <ClCompile Include="question.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="fileIO.h" />
+    <ClInclude Include="print.h" />
     <ClInclude Include="question.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
